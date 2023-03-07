@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export const Card = () => {
+export const Card = (props) => {
   return (
-    <div>Hola, soy una tarjeta</div>
-    
-  )
-}
+    <div>
+      <h3>
+        {props.nombre} {props.apellido}
+      </h3>
+    </div>
+  );
+};
